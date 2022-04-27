@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House list</title>
+    <script src="AddNewHouse.js"></script>
+    <script src="deletHouse.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="content">
+        <nav class="navbar has-text-centered">
+            <div class="navbar-menu">
+                <div class="navbar-item">
+                    <h1 class="title">Houses List</h1>
+                </div>
+            </div>
+    </header>
+    </nav>
+
+    <section class="content columns">
+        <div class="column is-half">
+            <form class="box" id="houseInfo">
+                <labell class="label" for="residenceNumber">Residence Number:</label>
+                    <input class="input is-primary" type="text" name="residenceNumber" placeholder="Number">
+                    <br>
+                    <br>
+                    <labell class="label" for="neighborhood">House's Neighborhood</label>
+                        <input class="input is-primary" type="text" name="neighborhood" placeholder="Neighborhood">
+                        <br>
+                        <br>
+                        <label class="label" for="city">House's City</label>
+                        <input class="input is-primary" type="text" name="city" placeholder="City">
+                        <br name="break">
+                        <br>
+                        <labell class="label" for="area">House Area</label>
+                            <input class="input is-primary" type="text" name="area" placeholder="Area">
+                            <br>
+                            <br>
+                            <button class="button is-primary" type="button" onclick="AddNewHouse()">Add House</button>
+            </form>
+        </div>
+
+        <div class="column">
+            <div class="box">
+                <h2 class="title">Houses List</h2>
+                <ul id="housesGroup">
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- 
+Queremos adcionar uma lista de casa com: Numero da residência, bairro, cidade e área da casa.
+Devem ter 4 campos para preenchimento das informações
+Quando clicar no botão add a casa deve ser add a uma lista logo abaixo
+quando este elemento for adicionado na lista, deve vir com um botão para remover, que quando ele é clicado o elemento é removido
+
+Pesquisar sobre a função createElement: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement 
+setAttribute: https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+removeChild: https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild
+parentNode: https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode
+Formulário com campos e o botão
+criar a função que vai add os elementos na lista
+Criar a função de remover
+-->
