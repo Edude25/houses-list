@@ -1,3 +1,5 @@
+import './deletHouse'
+
 function AddNewHouse() {
     let number = document.querySelector("input[name = residenceNumber]").value;
     let neighborhood = document.querySelector("input[name = neighborhood]").value;
